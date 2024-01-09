@@ -27,7 +27,7 @@ PRODUCT_PACKAGES += \
 $(call inherit-product, vendor/aospa/target/product/version.mk)
 
 # AOSPA private configuration - optional.
-$(call inherit-product-if-exists, vendor/aospa-priv/target/product/aospa-priv-target.mk)
+$(call inherit-product, vendor/xiaomi/overlay/packages.mk)
 
 # APNs
 ifneq ($(TARGET_NO_TELEPHONY), true)
